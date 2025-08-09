@@ -10,10 +10,13 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
+        "codewithkyrian/whisper.php": "^1.1",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
         "livewire/flux": "^2.1.1",
-        "livewire/volt": "^1.7.0"
+        "livewire/flux-pro": "^2.2",
+        "livewire/volt": "^1.7.0",
+        "spatie/livewire-filepond": "^1.5"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -72,10 +75,17 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "allow-plugins": {
+            "codewithkyrian/platform-package-installer": true,
             "pestphp/pest-plugin": true,
             "php-http/discovery": true
         }
     },
     "minimum-stability": "stable",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": {
+        "flux-pro": {
+            "type": "composer",
+            "url": "https://composer.fluxui.dev"
+        }
+    }
 }

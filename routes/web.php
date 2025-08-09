@@ -4,12 +4,20 @@ use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 })->name('home');
 
-Route::view('dashboard', 'dashboard')
+Route::view('home', 'home')
     ->middleware(['auth', 'verified'])
-    ->name('dashboard');
+    ->name('home');
+
+Route::view('new-echo', 'new-echo')
+    ->middleware(['auth', 'verified'])
+    ->name('new-echo');
+
+Route::view('edit-echo', 'edit-echo')
+    ->middleware(['auth', 'verified'])
+    ->name('edit-echo');
 
 Route::middleware(['auth'])->group(function () {
     Route::redirect('settings', 'settings/profile');

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "61eccc5dc89e08e92f1eea8940ff4dae",
+    "content-hash": "9460ab00887a99aa16d01304daf4ff54",
     "packages": [
         {
             "name": "brick/math",
@@ -134,6 +134,120 @@
                 }
             ],
             "time": "2024-02-09T16:56:22+00:00"
+        },
+        {
+            "name": "codewithkyrian/platform-package-installer",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CodeWithKyrian/platform-package-installer.git",
+                "reference": "21b537e485570f7eda1044d2384bf723b3841307"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/CodeWithKyrian/platform-package-installer/zipball/21b537e485570f7eda1044d2384bf723b3841307",
+                "reference": "21b537e485570f7eda1044d2384bf723b3841307",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.1 || ^2.0",
+                "composer-runtime-api": "*",
+                "php": "^8.1",
+                "symfony/yaml": "^6.4 || ^7.2"
+            },
+            "require-dev": {
+                "composer/composer": "~1.0 || ~2.0",
+                "pestphp/pest": "^2.36.0|^3.5.0",
+                "symfony/var-dumper": "^6.0|^7.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Codewithkyrian\\PlatformPackageInstaller\\Plugin",
+                "plugin-modifies-downloads": true,
+                "plugin-modifies-install-path": true
+            },
+            "autoload": {
+                "psr-4": {
+                    "Codewithkyrian\\PlatformPackageInstaller\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyrian Obikwelu",
+                    "email": "koshnawaza@gmail.com"
+                }
+            ],
+            "description": "A Composer plugin that provides fine-grained control over platform-specific package distribution for PHP projects",
+            "support": {
+                "issues": "https://github.com/CodeWithKyrian/platform-package-installer/issues",
+                "source": "https://github.com/CodeWithKyrian/platform-package-installer/tree/1.1.1"
+            },
+            "time": "2025-07-21T13:06:16+00:00"
+        },
+        {
+            "name": "codewithkyrian/whisper.php",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CodeWithKyrian/whisper.php.git",
+                "reference": "84272cd6593586c2336b19a66d3f258d62bfc755"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/CodeWithKyrian/whisper.php/zipball/84272cd6593586c2336b19a66d3f258d62bfc755",
+                "reference": "84272cd6593586c2336b19a66d3f258d62bfc755",
+                "shasum": ""
+            },
+            "require": {
+                "codewithkyrian/platform-package-installer": "^1.0",
+                "ext-ffi": "*",
+                "php": "^8.1",
+                "psr/log": "^3.0"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.18",
+                "mockery/mockery": "^1.6",
+                "pestphp/pest": "^2.36.0|^3.5.0",
+                "symfony/var-dumper": "^6.4.11|^7.1.5"
+            },
+            "type": "platform-package",
+            "extra": {
+                "platform-urls": {
+                    "linux-arm64": "https://github.com/Codewithkyrian/whisper.php/releases/download/{version}/dist-linux-arm64.tar.gz",
+                    "darwin-arm64": "https://github.com/Codewithkyrian/whisper.php/releases/download/{version}/dist-darwin-arm64.tar.gz",
+                    "linux-x86_64": "https://github.com/Codewithkyrian/whisper.php/releases/download/{version}/dist-linux-x86_64.tar.gz",
+                    "darwin-x86_64": "https://github.com/Codewithkyrian/whisper.php/releases/download/{version}/dist-darwin-x86_64.tar.gz",
+                    "windows-x86_64": "https://github.com/Codewithkyrian/whisper.php/releases/download/{version}/dist-windows-x86_64.zip"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/Utils.php"
+                ],
+                "psr-4": {
+                    "Codewithkyrian\\Whisper\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyrian Obikwelu",
+                    "email": "kyrianobikwelu@gmail.com"
+                }
+            ],
+            "description": "PHP bindings for OpenAI Whisper made possible by whisper.cpp",
+            "support": {
+                "issues": "https://github.com/CodeWithKyrian/whisper.php/issues",
+                "source": "https://github.com/CodeWithKyrian/whisper.php/tree/1.1.0"
+            },
+            "time": "2024-12-14T16:46:34+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -2070,6 +2184,63 @@
             "time": "2025-08-09T01:46:51+00:00"
         },
         {
+            "name": "livewire/flux-pro",
+            "version": "2.2.4",
+            "dist": {
+                "type": "zip",
+                "url": "https://composer.fluxui.dev/download/9f96e524-b277-440e-96f6-6a8f1b41e048/flux-pro-2.2.4.zip",
+                "reference": "51bf2c15a33e6ca7eddef336ff18fa9b3d952ed3",
+                "shasum": "cc4207cb6cc365bc0c02c61c9b03797b528ba4fc"
+            },
+            "require": {
+                "illuminate/console": "^10.0|^11.0|^12.0",
+                "illuminate/support": "^10.0|^11.0|^12.0",
+                "illuminate/view": "^10.0|^11.0|^12.0",
+                "laravel/prompts": "^0.1.24|^0.2|^0.3",
+                "livewire/flux": "2.2.4|dev-main",
+                "livewire/livewire": "^3.6.2",
+                "php": "^8.1",
+                "symfony/console": "^6.0|^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "Flux": "FluxPro\\FluxPro"
+                    },
+                    "providers": [
+                        "FluxPro\\FluxProServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "FluxPro\\": "src/"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Caleb Porzio",
+                    "email": "calebporzio@gmail.com"
+                }
+            ],
+            "description": "The pro version of Flux, the official UI component library for Livewire.",
+            "keywords": [
+                "components",
+                "flux",
+                "laravel",
+                "livewire",
+                "ui"
+            ],
+            "time": "2025-08-09T01:53:03+00:00"
+        },
+        {
             "name": "livewire/livewire",
             "version": "v3.6.4",
             "source": {
@@ -3483,6 +3654,145 @@
                 "source": "https://github.com/ramsey/uuid/tree/4.9.0"
             },
             "time": "2025-06-25T14:20:11+00:00"
+        },
+        {
+            "name": "spatie/laravel-package-tools",
+            "version": "1.92.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-package-tools.git",
+                "reference": "f09a799850b1ed765103a4f0b4355006360c49a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/f09a799850b1ed765103a4f0b4355006360c49a5",
+                "reference": "f09a799850b1ed765103a4f0b4355006360c49a5",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^9.28|^10.0|^11.0|^12.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.5",
+                "orchestra/testbench": "^7.7|^8.0|^9.0|^10.0",
+                "pestphp/pest": "^1.23|^2.1|^3.1",
+                "phpunit/php-code-coverage": "^9.0|^10.0|^11.0",
+                "phpunit/phpunit": "^9.5.24|^10.5|^11.5",
+                "spatie/pest-plugin-test-time": "^1.1|^2.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\LaravelPackageTools\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Tools for creating Laravel packages",
+            "homepage": "https://github.com/spatie/laravel-package-tools",
+            "keywords": [
+                "laravel-package-tools",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/laravel-package-tools/issues",
+                "source": "https://github.com/spatie/laravel-package-tools/tree/1.92.7"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-07-17T15:46:43+00:00"
+        },
+        {
+            "name": "spatie/livewire-filepond",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/livewire-filepond.git",
+                "reference": "fd91404aab616ef2093f21971242ea7f25e285b2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/livewire-filepond/zipball/fd91404aab616ef2093f21971242ea7f25e285b2",
+                "reference": "fd91404aab616ef2093f21971242ea7f25e285b2",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^10.0||^11.0||^12.0",
+                "livewire/livewire": "^3.5",
+                "php": "^8.2",
+                "spatie/laravel-package-tools": "^1.16"
+            },
+            "require-dev": {
+                "larastan/larastan": "^3.1",
+                "laravel/pint": "^1.14",
+                "nunomaduro/collision": "^8.1.1||^7.10.0",
+                "orchestra/testbench": "^9.0.0||^8.22.0||^10.0",
+                "pestphp/pest": "^2.34||^3.7",
+                "pestphp/pest-plugin-arch": "^2.7||^3.0",
+                "pestphp/pest-plugin-laravel": "^2.3||^3.1",
+                "phpstan/extension-installer": "^1.3",
+                "phpstan/phpstan-deprecation-rules": "^1.1||^2.0",
+                "phpstan/phpstan-phpunit": "^1.3||^2.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\LivewireFilepond\\LivewireFilepondServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\LivewireFilepond\\": "src/",
+                    "Spatie\\LivewireFilepond\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rias Van der Veken",
+                    "email": "rias@spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Upload files using Filepond in Livewire components",
+            "homepage": "https://github.com/spatie/livewire-filepond",
+            "keywords": [
+                "laravel",
+                "livewire",
+                "livewire-filepond",
+                "spatie",
+                "uploads"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/livewire-filepond/issues",
+                "source": "https://github.com/spatie/livewire-filepond/tree/1.5.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-05-26T07:34:37+00:00"
         },
         {
             "name": "symfony/clock",
@@ -5761,6 +6071,82 @@
                 }
             ],
             "time": "2025-07-29T20:02:46+00:00"
+        },
+        {
+            "name": "symfony/yaml",
+            "version": "v7.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/yaml.git",
+                "reference": "b8d7d868da9eb0919e99c8830431ea087d6aae30"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/b8d7d868da9eb0919e99c8830431ea087d6aae30",
+                "reference": "b8d7d868da9eb0919e99c8830431ea087d6aae30",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2",
+                "symfony/deprecation-contracts": "^2.5|^3.0",
+                "symfony/polyfill-ctype": "^1.8"
+            },
+            "conflict": {
+                "symfony/console": "<6.4"
+            },
+            "require-dev": {
+                "symfony/console": "^6.4|^7.0"
+            },
+            "bin": [
+                "Resources/bin/yaml-lint"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Yaml\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Loads and dumps YAML files",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/yaml/tree/v7.3.2"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/nicolas-grekas",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2025-07-10T08:47:49+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
@@ -9110,82 +9496,6 @@
                 }
             ],
             "time": "2024-10-20T05:08:20+00:00"
-        },
-        {
-            "name": "symfony/yaml",
-            "version": "v7.3.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/yaml.git",
-                "reference": "b8d7d868da9eb0919e99c8830431ea087d6aae30"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/b8d7d868da9eb0919e99c8830431ea087d6aae30",
-                "reference": "b8d7d868da9eb0919e99c8830431ea087d6aae30",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=8.2",
-                "symfony/deprecation-contracts": "^2.5|^3.0",
-                "symfony/polyfill-ctype": "^1.8"
-            },
-            "conflict": {
-                "symfony/console": "<6.4"
-            },
-            "require-dev": {
-                "symfony/console": "^6.4|^7.0"
-            },
-            "bin": [
-                "Resources/bin/yaml-lint"
-            ],
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Yaml\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Loads and dumps YAML files",
-            "homepage": "https://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/yaml/tree/v7.3.2"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://github.com/nicolas-grekas",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2025-07-10T08:47:49+00:00"
         },
         {
             "name": "ta-tikoma/phpunit-architecture-test",
