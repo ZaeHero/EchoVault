@@ -30,7 +30,7 @@
                     <flux:table.column class="strong">Summary</flux:table.column>
                     <flux:table.column class="strong">Tags</flux:table.column>
                     <flux:table.column class="strong flex justify-end">Actions</flux:table.column>
-                </flux:table.columns>
+                </flux:table.columns>\
 
                 <flux:table.rows>
                     
