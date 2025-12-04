@@ -34,8 +34,8 @@
 
                 <flux:table.rows>
                     
-                        <flux:table.row class="hover:bg-amber-500/50 hover:cursor-pointer" onclick="window.location='{{ route('edit-echo') }}'">
-                            <flux:table.cell>Echo I</flux:table.cell>
+                        <flux:table.row class="hover:bg-amber-500/50 hover:cursor-pointer p-4" onclick="window.location='{{ route('edit-echo') }}'">
+                            <flux:table.cell class="">Echo I</flux:table.cell>
                             <flux:table.cell class="flex justify-end">12:00</flux:table.cell>
                             <flux:table.cell class=""></flux:table.cell>
                             <flux:table.cell class="">
